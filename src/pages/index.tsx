@@ -1,13 +1,15 @@
 import AboutMe from 'components/AboutMe'
+import Contact from 'components/Contact'
 import Header from 'components/Header'
-import Main from 'components/Main'
+import Projects from 'components/Projects'
 
 export default function Home() {
   return (
     <>
       <Header />
       <AboutMe />
-      <Main />
+      <Projects />
+      <Contact />
     </>
   )
 }

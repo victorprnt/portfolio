@@ -2,54 +2,40 @@ import styled from 'styled-components'
 import theme from 'styles/theme/light'
 
 export const Wrapper = styled.header`
+  background-color: ${theme.colors.backgroundHeader};
   width: 100%;
-  padding: 2% 3%;
+  color: #fff;
+`
+
+export const Container = styled.div`
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 4rem 0;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 
-  background-color: ${theme.colors.backgroundHeader};
-  color: #fff;
-
-  .title,
-  .menuItem {
-    font-size: 1.75rem;
+  .title {
+    margin-right: auto;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
   }
 
-  .menu {
-    .menuItem {
-      width: 100%;
-      margin: 0 10%;
+  .menuItem {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.07em;
 
-      text-decoration: none;
-      color: #fff;
-      white-space: nowrap;
+    transition: 0.2s all ease-in-out;
 
-      // position: relative;
-
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        // &::before {
-        //   content: '< ';
-        //   font-size: 1.5rem;
-        //   color: ${theme.colors.menuHover};
-
-        //   position: absolute;
-        //   left: 0;
-        // }
-
-        color: ${theme.colors.menuHover};
-
-        // &::after {
-        //   content: ' />';
-        //   font-size: 1.5rem;
-        //   color: ${theme.colors.menuHover};
-
-        //   position: absolute;
-        //   right: 0;
-        // }
-      }
+    &:hover {
+      color: ${theme.colors.menuHover};
     }
+  }
+
+  .menuItem:not(:last-child) {
+    margin-right: 3rem;
   }
 `
