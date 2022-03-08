@@ -2,15 +2,15 @@ import styled from 'styled-components'
 import theme from 'styles/theme/light'
 
 export const Wrapper = styled.section`
-  height: 60%;
-  background-color: ${theme.colors.backgroundSectionEven};
+  height: 100vh;
+  background-color: ${theme.colors.backgroundSectionOdd};
 `
 
 export const Container = styled.div`
-  max-width: 50%;
+  max-width: 70%;
   height: 100%;
   margin: 0 auto;
-  padding-top: 12rem;
+  padding-top: 15rem;
   display: flex;
   justify-content: center;
   // align-items: center;
@@ -31,19 +31,30 @@ export const TextColumn = styled.div`
     padding: 0.5rem 1.5rem;
 
     font-size: 1.5rem;
-
-    background-color: ${theme.colors.professionLabel};
+    letter-spacing: 0.2rem;
+    background-color: ${theme.colors.menuHover};
   }
 
   .section-title {
     margin-right: auto;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+  }
+
+  .section-subtitle {
+    margin-right: auto;
+    margin-bottom: 3rem;
     font-size: 2rem;
+    font-weight: 200;
     letter-spacing: 0.1em;
   }
 
   .text {
-    font-size: ${theme.fontSize.desktopText};
-    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    line-height: 2.5rem;
     margin-bottom: auto;
   }
 
@@ -58,6 +69,7 @@ export const TextColumn = styled.div`
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
+    letter-spacing: 0.2rem;
 
     transition: all 0.2s ease-in-out;
 
@@ -69,6 +81,7 @@ export const TextColumn = styled.div`
 `
 
 export const ImageColumn = styled.div`
+  margin: auto auto;
   img {
     border-radius: 50%;
   }

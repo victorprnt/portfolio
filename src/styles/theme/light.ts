@@ -11,6 +11,7 @@ export default {
 
   fontSize: {
     desktopText: '1.5rem',
+    desktopLineHeight: '2rem',
     desktopTitle: '3rem',
     laptopText: '1.5rem',
     laptopTitle: '1.5rem',

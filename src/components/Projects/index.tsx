@@ -1,16 +1,14 @@
+import Image from 'next/image'
 import * as S from './styles'
 
 const Projects = () => (
   <S.Wrapper>
     <S.Container>
-      <h1 className="section-title">Lorem ipsum dolor sit amet</h1>
+      <h1 className="section-title">Projetos desenvolvidos</h1>
 
       <S.Project>
         <div className="card">
-          <img
-            src="https://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg"
-            alt=""
-          />
+          <Image src="/img/ss-project-01.png" layout="fill" />
           <div className="title-tags">
             <h1 className="card-title">Title</h1>
             <div className="tags">
@@ -30,10 +28,7 @@ const Projects = () => (
 
       <S.Project>
         <div className="card">
-          <img
-            src="https://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg"
-            alt=""
-          />
+          <Image src="/img/ss-project-01.png" alt="" layout="fill" />
           <div className="title-tags">
             <h1 className="card-title">Title</h1>
             <div className="tags">
@@ -53,10 +48,7 @@ const Projects = () => (
 
       <S.Project>
         <div className="card">
-          <img
-            src="https://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg"
-            alt=""
-          />
+          <Image src="/img/ss-project-01.png" alt="" layout="fill" />
           <div className="title-tags">
             <h1 className="card-title">Title</h1>
             <div className="tags">

@@ -4,7 +4,7 @@ import theme from 'styles/theme/light'
 
 export const Wrapper = styled.section`
   width: 100%;
-  background-color: ${theme.colors.backgroundSectionOdd};
+  background-color: ${theme.colors.backgroundSectionEven};
   color: #fff;
 `
 
@@ -18,8 +18,12 @@ export const Container = styled.div`
   // align-items: center;
 
   .section-title {
-    font-size: 4rem;
+    max-width: 75%;
+    margin: 0 auto;
     margin-bottom: 6rem;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
   }
 `
 
@@ -52,8 +56,6 @@ export const Project = styled.div`
       justify-content: space-between;
       position: absolute;
       top: 0;
-
-
 
       .card-title {
         // position: absolute;

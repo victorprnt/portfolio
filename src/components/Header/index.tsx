@@ -7,9 +7,9 @@ const Header = () => (
         Victor <strong>Parente</strong>
       </span>
       <div className="menu">
-        <a href="#" className="menuItem">
+        {/* <a href="#" className="menuItem">
           Home
-        </a>
+        </a> */}
         <a href="#" className="menuItem">
           About me
         </a>
