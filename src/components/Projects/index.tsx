@@ -22,6 +22,12 @@ const Projects = () => (
             reprehenderit eveniet commodi dignissimos aliquam optio, eum alias
             ab pariatur. Tempore doloribus placeat culpa animi harum commodi
             qui? Aliquam, quod omnis!
+            <br />
+            <a href="#">
+              <br />
+              Code
+            </a>
+            <a href="#">Live</a>
           </p>
         </div>
       </S.Project>
@@ -42,6 +48,12 @@ const Projects = () => (
             reprehenderit eveniet commodi dignissimos aliquam optio, eum alias
             ab pariatur. Tempore doloribus placeat culpa animi harum commodi
             qui? Aliquam, quod omnis!
+            <br />
+            <a href="#">
+              <br />
+              Code
+            </a>
+            <a href="#">Live</a>
           </p>
         </div>
       </S.Project>
@@ -62,6 +74,12 @@ const Projects = () => (
             reprehenderit eveniet commodi dignissimos aliquam optio, eum alias
             ab pariatur. Tempore doloribus placeat culpa animi harum commodi
             qui? Aliquam, quod omnis!
+            <br />
+            <a href="#">
+              <br />
+              Code
+            </a>
+            <a href="#">Live</a>
           </p>
         </div>
       </S.Project>

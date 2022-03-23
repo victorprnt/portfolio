@@ -7,26 +7,44 @@ const Contact = () => (
       <h1 className="section-title">Contact me</h1>
       <p className="text">Entre em contato</p>
       <S.Social>
-        <div className="social-card">
-          <a href="#" className="social-icon">
-            <Image src="/icons/gmail.svg" alt="" width="64" height="64" />
-          </a>
+        <a href="#" className="social-icon">
+          <div className="social-card">
+            <Image
+              id="gmail"
+              src="/icons/gmail.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
           <p className="social-text">Gmail</p>
-        </div>
+        </a>
 
-        <div className="social-card">
-          <a href="#" className="social-icon">
-            <Image src="/icons/instagram.svg" alt="" width="64" height="64" />
-          </a>
-          <p className="social-text">instagram</p>
-        </div>
+        <a href="#" className="social-icon">
+          <div className="social-card">
+            <Image
+              id="github"
+              src="/icons/github.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
+          <p className="social-text">Github</p>
+        </a>
 
-        <div className="social-card">
-          <a href="#" className="social-icon">
-            <Image src="/icons/linkedin.svg" alt="" width="64" height="64" />
-          </a>
+        <a href="#" className="social-icon">
+          <div className="social-card">
+            <Image
+              id="linkedin"
+              src="/icons/linkedin.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
           <p className="social-text">LinkedIn</p>
-        </div>
+        </a>
       </S.Social>
     </S.Container>
   </S.Wrapper>

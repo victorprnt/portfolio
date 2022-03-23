@@ -12,7 +12,8 @@ export const Container = styled.div`
   max-width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding-top: 12rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -30,24 +31,24 @@ export const Container = styled.div`
 export const Project = styled.div`
   max-width: 100%;
   margin-top: 2rem;
-  border-bottom: 1px solid #c4c4c4;
 
   .card {
     max-width: 50%;
-    height: 320px;
-    margin: 0 auto 3rem;
+    height: 330px;
+    margin: 0 auto 6rem;
     position: relative;
 
     img {
-      position: absolute
+      position: absolute;
       bottom: 0;
       width: 100%;
-      height: 300px;
+      max-height: 300px;
+      height: 100vh;
       object-fit: cover;
-      object-position: 20% 10%;
+      object-position: top;
     }
 
-    .title-tags{
+    .title-tags {
       width: 100%;
       height: fit-content;
       padding: 2rem 3rem;
@@ -92,32 +93,41 @@ export const Project = styled.div`
 
       opacity: 0;
 
+      a {
+        margin-right: calc(100% - 80px);
+      }
     }
 
     &,
     img,
     .title-tags,
     .description {
-    transition: all 0.2s ease-in-out;
-  }
-
-    &:hover img {
-      height: 400px;
-      filter: brightness(0.5);
-      transform: translateY(-100px);
+      transition: all 0.2s ease-in-out;
     }
 
     &:hover {
-      .title-tags{
-        transform: translateY(-100px);
+      img {
+        filter: brightness(0.5);
       }
-      .description {
-        transform: translateY(-70px);
+
+      .title-tags {
+        /* transform: translateY(-10px); */
       }
 
       .description {
+        transform: translateY(-10px);
         opacity: 1;
       }
     }
+  }
+
+  &:not(:last-child) .card::after {
+    content: '';
+    height: 1px;
+    width: 120%;
+    background-color: #c4c4c4;
+    position: absolute;
+    bottom: -20px;
+    left: -10%;
   }
 `
